@@ -1,0 +1,111 @@
+.about_container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    align-items: center;
+}
+
+.about_img {
+    width: 350px;
+    height: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+    object-fit: cover;
+}
+.about_info {
+    grid-template-columns: repeat(2, 300px);
+    gap: 0.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.about_box {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+}
+
+.about_icon {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-5);
+    margin-left: var(--mb-0-5);
+}
+
+.about_title {
+    margin-bottom: var(--mb-0-5);
+}
+
+.about_subtitle p {
+    font-size: var(--small-font-size);
+    margin-top: var(--mb-0-5);
+}
+
+.about_describ {
+    margin-bottom: var(--mb-2);
+}
+
+.about_describ-list {
+    padding-left: 2rem;
+    list-style: disc;
+}
+
+.doc-icon {
+    color: var(--container-color);
+    padding-left: 10px;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+
+    .about_container {
+        grid-template-columns: 1fr;
+        column-gap: 4rem;
+    }
+
+    .about_info {
+        justify-content: center;
+    }
+
+    .about_describ {
+        display: block;
+        align-items: center;
+        padding: 0 5rem ;
+        margin-bottom: 2rem;
+        
+    }
+
+    .about_data {
+        text-align: center;
+    }
+    
+    .about_img {
+        width: 220px;
+        height: 220px;
+    }     
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+    .about_info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about_describ {
+        padding: 0;
+    }
+
+}
+
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+   
+    .about_info {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .about_describ {
+        padding: 0;
+    }
+}
