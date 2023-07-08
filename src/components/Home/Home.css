@@ -126,7 +126,7 @@
 
 
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 385px) {
     .home_data {
         text-align: center;
     }
@@ -150,5 +150,14 @@
     .home_img {
         background-position: -35px;
     }
+
+    .home_content {
+        grid-template-columns: 0.5fr 3fr ;
+        column-gap: 2.5rem;
+        padding: none;
+        
+    }
+
+    
 
 }
